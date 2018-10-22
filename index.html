@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Trello</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <br />
+            <h3 class="heading" contenteditable=true>My untitled Board</h3>
+            <hr />
+            <div class="row titles">            
+                <div class="col-md-3 vr">
+                    Thinking
+                </div>
+                <div class="col-md-3 vr">
+                    Proposed
+                </div>
+                <div class="col-md-3 vr">
+                    Active
+                </div>
+                <div class="col-md-3 vr">
+                    Closed
+                </div>      
+            </div>
+            <hr />
+            <div class="row board">            
+                <div class="col-md-3 vr-board" ondragover="allowDrop(event)" ondrop="drop(event)">
+                    <button onclick="addButton(event)" class="add-button">+</button>
+                </div>
+                <div class="col-md-3 vr-board" ondragover="allowDrop(event)" ondrop="drop(event)">
+                </div>
+                <div class="col-md-3 vr-board" ondragover="allowDrop(event)" ondrop="drop(event)">
+                </div>
+                <div class="col-md-3 vr-board" ondragover="allowDrop(event)" ondrop="drop(event)">
+                </div>      
+            </div>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>

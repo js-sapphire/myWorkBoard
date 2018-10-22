@@ -1,0 +1,35 @@
+.vr {
+    padding-right:20px; 
+    border-right: 1px solid #ccc;
+}
+
+.board {
+    height: 500px;
+}
+
+.vr-board{
+    padding-right:20px; 
+    border-right: 1px solid #ccc;
+    height: 500px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.titles{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.work-item{
+    width: 15rem;
+    height: 4rem;
+    max-height: 5rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0.5rem;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
