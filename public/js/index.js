@@ -1,4 +1,4 @@
-let ranId = 1;
+
 
 const dragStart = (event) => {
     event.dataTransfer.setData("text/plain", event.target.id);
@@ -29,9 +29,16 @@ const addButton = (event) => {
     newElement.className += 'work-item';
     newElement.draggable = 'true';
     newElement.addEventListener('dragstart', dragStart);
-    ranId = ranId + 1;
+    let ranId;
+    if(window.localStorage.getItem('workItemId')){
+        ranId = parseInt(window.localStorage.getItem('workItemId')) + 1;
+    }
+    else{
+        ranId = 1;
+    }
+    window.localStorage.setItem('workItemId', ranId);
     newElement.id = ranId;
-    newElement.innerHTML = '<p contenteditable="true">about your work item</p>'
+    newElement.innerHTML = '<p contenteditable="true">Write about your work item</p>'
     try {
         parentElement.insertBefore(newElement, document.getElementById("1"));
     } catch (error) {

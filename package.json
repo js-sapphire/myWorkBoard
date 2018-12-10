@@ -1,0 +1,17 @@
+{
+  "name": "myworkboard",
+  "version": "1.0.0",
+  "description": "My Work Board",
+  "main": "server.js",
+  "repository": "https://github.com/js-sapphire/myWorkBoard.git",
+  "author": "Shashank Shekhar <shashank483384@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "links-on-terminal": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
